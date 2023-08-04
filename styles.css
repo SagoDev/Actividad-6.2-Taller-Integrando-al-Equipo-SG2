@@ -75,7 +75,6 @@ body {
 .contenedor-img {
     display: flex;    
     justify-content: center;
-    overflow: hidden;
     padding: 40px;
 }
 
@@ -118,7 +117,7 @@ body {
 .galeriaPagina {
     object-fit: cover;
     height: 80vh;
-    width: 45v;
+    width: 45vw;
 }
 #primeraimg{
     clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%); 
@@ -143,16 +142,7 @@ body {
     transform: translatex(20px);
         -webkit-transform: translatex(20px);
         -moz-transform: translatex(20px);
-}
-
-
-              
-
-              
-              
-
-
-              
+}      
 
 .containerBubbles {
     position: relative;
