@@ -97,7 +97,7 @@ body {
 .galeriaPagina {
     object-fit: cover;
     height: 80vh;
-    width: 45vw;
+    width: 45v;
 }
 #primeraimg{
     clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%); 
@@ -132,3 +132,52 @@ body {
 
 
               
+
+.containerBubbles {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bubbles {
+    position: relative;
+    display: flex;
+}
+
+.bubbles span {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: rgb(114, 217, 235);
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px rgb(45, 89, 97),
+                0 0 50px rgb(114, 217, 235),
+                0 0 100px rgb(114, 217, 235);
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+
+.bubbles span:nth-child(even) {
+    background: rgb(80, 93, 207);
+    box-shadow: 0 0 0 10px rgb(55, 64, 141),
+                0 0 50px rgb(80, 93, 207),
+                0 0 100px rgb(80, 93, 207);
+}
+
+@keyframes animate {
+
+    0% {
+        transform: translateY(100vh) scale(0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(-10vh) scale(1);
+        opacity: 0;
+    }
+}
+
