@@ -45,8 +45,6 @@ body {
 
 #boton-home {
     filter: invert(120%) sepia(93%) saturate(1700%) brightness(86%) contrast(101%);
-    display: inline;
-    position: relative;
 }
 
 #boton-home:hover {
@@ -92,4 +90,6 @@ body {
 
 .image:hover {
     transform: scale(1.1);
+    
 }
+
