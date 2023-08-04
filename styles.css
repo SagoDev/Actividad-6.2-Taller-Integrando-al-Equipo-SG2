@@ -3,7 +3,9 @@
 body {
     background-color: rgb(2, 4, 36);
     color: #f2f2f2;
-    position: relative;
+    position: relative;    
+}
+#body {
     overflow: hidden;
 }
 
