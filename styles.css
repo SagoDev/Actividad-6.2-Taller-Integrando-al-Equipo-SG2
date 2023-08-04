@@ -43,9 +43,12 @@ body {
     box-shadow: 2px 3px #888888;
 }
 
+#boton-home {
+    filter: invert(120%) sepia(93%) saturate(1700%) brightness(86%) contrast(101%);
+}
 
 #boton-home:hover {
-    filter: invert(95%);
+    filTer: invert(100%);
 }
 
 .contenedor-img {
@@ -87,4 +90,6 @@ body {
 
 .image:hover {
     transform: scale(1.1);
+    
 }
+
