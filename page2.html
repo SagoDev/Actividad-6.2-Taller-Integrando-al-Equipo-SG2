@@ -9,10 +9,13 @@
 
   <body>
     <a id="boton-home" href="index.html">
-      <img src="./img/home-button.svg" alt="Home" width="30px" height="30px" />
+      <img src="./img/home-button.svg" alt="Home" width="50px" height="50px" />
     </a>
-    <h1>Galería de la Tecnología</h1>
-    <img src="img2.jpg" alt="Sala de servidores" class="image" />
+    <h1 id="titulo2" class="titulos">Galería de la Tecnología</h1>
+    <div class="contenedor-img">
+      <img src="img2.jpg" alt="Sala de servidores" class="image" />
+    </div>
+
     <h2>Lorem descripción</h2>
     <p>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur
@@ -20,8 +23,15 @@
       quos debitis recusandae sequi, fugit quis nihil omnis atque inventore
       consequatur soluta?
     </p>
-    <a href="page1.html" title="Imagen anterior" class="link-button"
-      >&lt;= Imagen anterior</a
+    <button
+      onclick="window.location.href='page1.html'"
+      title="imagen anterior"
+      class="link-button"
+    >
+      Imagen anterior
+    </button>
+    <a href="index.html" title="volver al inicio" class="link-button"
+      >Volver al inicio</a
     >
   </body>
 </html>
