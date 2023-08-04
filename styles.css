@@ -1,3 +1,5 @@
+
+
 body {
     background-color: rgb(2, 4, 36);
     color: #f2f2f2;
@@ -43,12 +45,30 @@ body {
     box-shadow: 2px 3px #888888;
 }
 
+#container-home {
+    position: absolute;
+    z-index: 1;
+    width: 200px;
+    margin-left: 20px;
+}
+
 #boton-home {
     filter: invert(120%) sepia(93%) saturate(1700%) brightness(86%) contrast(101%);
+    display: flex;
+    text-decoration: none;
+    
+}
+#boton-home p {
+    margin: 17px 10px 0 0;
+    font-size: 1.2rem;
+}
+
+#boton-home p:link {
+    text-decoration: none;
 }
 
 #boton-home:hover {
-    filTer: invert(100%);
+    filter: invert(100%);
 }
 
 .contenedor-img {
