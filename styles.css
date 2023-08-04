@@ -8,6 +8,32 @@ body {
     height: 400px;
 }
 
+.titulos{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight:  950px;
+    letter-spacing: 0.3px;
+    font-size: 350%;
+    text-align: center;
+    transition: .5s, color .10s;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
+}
+#titulo1{
+    color: rgb(189, 52, 231);
+    text-shadow: 5px 5px 1px rgb(98, 221, 215);
+}
+#titulo2{
+    color: rgb(76, 250, 227);
+    text-shadow: 5px 5px 1px rgb(201, 29, 224); 
+}
+.titulos:hover{
+    transform: translatey(-20px);
+        -webkit-transform: translatey(-20px);
+        -moz-transform: translatey(-20px);
+}
+              
+
+
 .link-button {
     text-decoration: none;
     color: black;
