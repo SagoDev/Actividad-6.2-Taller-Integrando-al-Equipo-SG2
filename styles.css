@@ -3,6 +3,7 @@
 body {
     background-color: rgb(2, 4, 36);
     color: #f2f2f2;
+    position: relative;
 }
 
 .image{
@@ -34,7 +35,7 @@ body {
         -webkit-transform: translatey(-20px);
         -moz-transform: translatey(-20px);
 }
-              
+
 .link-button {
     text-decoration: none;
     color: black;
@@ -117,5 +118,86 @@ body {
 .galeriaPagina {
     object-fit: cover;
     height: 80vh;
-    width: 45vw;
+    width: 45v;
 }
+#primeraimg{
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%); 
+    transition: .5s, color .10s;
+        -webkit-transition: .3s, color .8s;
+        -moz-transition: .3s, color .8s;
+}
+#primeraimg:hover{
+    transform: translatex(-20px);
+        -webkit-transform: translatex(-20px);
+        -moz-transform: translatex(-20px);
+}
+
+#segundaimg{
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    transition: .5s, color .10s;
+        -webkit-transition: .3s, color .8s;
+        -moz-transition: .3s, color .8s;
+}
+
+#segundaimg:hover{
+    transform: translatex(20px);
+        -webkit-transform: translatex(20px);
+        -moz-transform: translatex(20px);
+}
+
+
+              
+
+              
+              
+
+
+              
+
+.containerBubbles {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.bubbles {
+    position: relative;
+    display: flex;
+}
+
+.bubbles span {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: rgb(114, 217, 235);
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px rgb(45, 89, 97),
+                0 0 50px rgb(114, 217, 235),
+                0 0 100px rgb(114, 217, 235);
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+
+.bubbles span:nth-child(even) {
+    background: rgb(80, 93, 207);
+    box-shadow: 0 0 0 10px rgb(55, 64, 141),
+                0 0 50px rgb(80, 93, 207),
+                0 0 100px rgb(80, 93, 207);
+}
+
+@keyframes animate {
+
+    0% {
+        transform: translateY(100vh) scale(0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(-10vh) scale(1);
+        opacity: 0;
+    }
+}
+
