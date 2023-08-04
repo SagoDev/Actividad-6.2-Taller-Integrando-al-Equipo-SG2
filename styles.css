@@ -1,13 +1,38 @@
 body {
-    background-color: rgb(255, 255, 165);
+    background-color: rgb(2, 4, 36);
+    color: #f2f2f2;
 }
 
 .image{
-    border: 5px solid green;
+    border: 5px solid rgb(216, 206, 62);
     border-radius: 10px;
     height: 500px;
 }
 
+.titulos{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight:  950px;
+    letter-spacing: 0.3px;
+    font-size: 350%;
+    text-align: center;
+    transition: .5s, color .10s;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
+}
+#titulo1{
+    color: rgb(189, 52, 231);
+    text-shadow: 5px 5px 1px rgb(98, 221, 215);
+}
+#titulo2{
+    color: rgb(76, 250, 227);
+    text-shadow: 5px 5px 1px rgb(201, 29, 224); 
+}
+.titulos:hover{
+    transform: translatey(-20px);
+        -webkit-transform: translatey(-20px);
+        -moz-transform: translatey(-20px);
+}
+              
 .link-button {
     text-decoration: none;
     color: black;
@@ -18,9 +43,44 @@ body {
     box-shadow: 2px 3px #888888;
 }
 
+
 .contenedor-img {
     display: flex;    
     justify-content: center;
     overflow: hidden;
     padding: 40px;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    display: flex;
+}
+
+.galeria1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.galeria2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.link {
+    position: relative;
+}
+
+.image {
+    transition: all 0.5s;   
+}
+
+.image:hover {
+    transform: scale(1.1);
 }
