@@ -18,7 +18,6 @@ body {
     box-shadow: 2px 3px #888888;
 }
 
-
 .container {
     position: relative;
     text-align: center;
@@ -43,4 +42,12 @@ body {
 
 .link {
     position: relative;
+}
+
+.image {
+    transition: all 0.5s;   
+}
+
+.image:hover {
+    transform: scale(1.1);
 }
